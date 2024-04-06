@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgb(243, 159, 159);
+        }
+
+        .especial::before{
+            content: '⇒ ';
+        }
+
+        .especial::after{
+            content: ' ⇐';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/LehBittencourt" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=E876DF6DABFB9BE2E4D6C27467534336#" target="_blank">Curriculo Lattes</a></li>
+        <li><a href="https://www.instagram.com/leh.bittencourt/" target="_blank">Perfil do Instagram</a></li>
+    </ul>
+</body>
+</html>
